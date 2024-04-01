@@ -1,0 +1,109 @@
+.question {
+  padding-top: 60px;
+  padding-bottom: 55px;
+  &__content {
+    width: 1170px;
+    height: 522px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 20px;
+    background: rgb(244, 244, 244);
+    margin-bottom: 30px;
+    display: flex;
+    .content {
+      &__info {
+        padding: 30px 50px 90px 30px;
+        .info {
+          &__title {
+            width: 609px;
+            height: 72px;
+            height: 72px;
+            color: rgb(55, 69, 74);
+            font-family: Proxima Nova;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: 0px;
+            text-align: left;
+            margin-bottom: 30px;
+          }
+          &__descr {
+            width: 607px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: rgb(55, 69, 74);
+            font-family: Proxima Nova;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0px;
+            text-align: left;
+            ol {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+      &__img {
+        width: 480px;
+        height: 521px;
+        background-image: url("/img/question/image.png");
+        background-size: contain;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    .button {
+      &__button {
+        width: 332px;
+        border-radius: 35px;
+        box-shadow: 0px 10px 20px 0px rgba(132, 199, 55, 0.3);
+        background: linear-gradient(
+          90deg,
+          rgb(108, 182, 68),
+          rgb(130, 202, 44) 100%
+        );
+        padding: 10px 11px 10px 30px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+          background: white;
+          .button__text {
+            color: rgb(108, 182, 68);
+          }
+          .button__arrow {
+            background: rgb(108, 182, 68);
+          }
+        }
+        .button {
+          &__text {
+            width: 221px;
+            height: 22px;
+            color: rgb(255, 255, 255);
+            font-family: Proxima Nova;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: left;
+            text-transform: uppercase;
+          }
+          &__arrow {
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            background: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

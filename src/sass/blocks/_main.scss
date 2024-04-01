@@ -1,0 +1,97 @@
+.main {
+  height: 509px;
+  background-color: var(--bg-light-gray);
+  padding-top: 20px;
+  .container-new {
+    position: relative;
+  }
+  &__nav {
+    height: 22px;
+    display: flex;
+    margin-bottom: 30px;
+    .nav {
+      &__icon {
+        margin-right: 9px;
+        display: flex;
+        align-items: center;
+      }
+      &__arrow {
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+      }
+      &__link {
+        width: 81px;
+        height: 22px;
+        color: rgba(55, 69, 74, 0.6);
+        font-family: Proxima Nova;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+  }
+  &__title {
+    width: 676px;
+    height: 100px;
+    color: rgb(55, 69, 74);
+    font-family: Proxima Nova;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 60px;
+    span {
+      color: rgb(118, 183, 42);
+    }
+  }
+  &__descr {
+    width: 724px;
+    height: 132px;
+    color: rgba(55, 69, 74, 0.6);
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    p:last-child {
+      color: rgba(55, 69, 74);
+    }
+  }
+  &__button {
+    padding: 15px 30px;
+    border: 1px solid rgb(118, 185, 38);
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    color: rgb(55, 69, 74);
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      background-color: rgb(118, 185, 38);
+      color: white;
+    }
+  }
+  &__image {
+    position: absolute;
+    width: 400.55px;
+    height: 509px;
+    background: url("/img/main/image.png");
+    background-size: cover;
+    right: 0;
+    top: -20px;
+  }
+}

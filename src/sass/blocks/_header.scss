@@ -1,0 +1,218 @@
+.header {
+  height: 92px;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  &__logo {
+    position: absolute;
+    left: 27px;
+    top: -14px;
+  }
+  &__info {
+    margin-right: 96px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    .info {
+      &__first-line {
+        color: rgb(55, 69, 74);
+        font-family: Proxima Nova;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+      }
+      &__second-line {
+        display: flex;
+        align-items: center;
+        .second-line {
+          &__geo {
+            color: rgb(118, 185, 38);
+            font-family: Proxima Nova;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            .geo {
+              &__img {
+                height: 22px;
+                width: 26px;
+                display: flex;
+                align-items: center;
+              }
+              &__count {
+                margin-left: 6px;
+                margin-right: 13px;
+              }
+            }
+          }
+          &__divider {
+            width: 1px;
+            height: 16px;
+            background: rgb(223, 223, 223);
+            margin-right: 10px;
+          }
+          &__text {
+            color: rgba(55, 69, 74, 0.6);
+            font-family: Proxima Nova;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(118, 185, 38);
+    border-radius: 26px;
+    width: 214px;
+    height: 52px;
+    margin-right: 67px;
+    gap: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(118, 185, 38);
+      .button__logo {
+        color: white;
+      }
+    }
+    .button {
+      &__logo {
+        color: rgb(118, 185, 38);
+        font-family: Proxima Nova;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: left;
+        div:first-child {
+          font-size: 16px;
+          font-weight: 700;
+        }
+        div:last-child {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+      &__text {
+        width: 102px;
+        height: 28px;
+        color: rgb(55, 69, 74);
+        font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+  }
+  &__divider {
+    width: 1px;
+    height: 92px;
+    background: rgb(244, 244, 244);
+  }
+  &__call {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 40px;
+    .call {
+      &__number {
+        a {
+          color: rgb(55, 69, 74);
+          font-family: Proxima Nova;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 30px;
+          letter-spacing: 0px;
+          text-align: left;
+          text-decoration: none;
+        }
+      }
+      &__link {
+        color: rgb(118, 185, 38);
+        font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0px;
+        text-align: left;
+        text-decoration: underline dashed;
+      }
+    }
+  }
+  &__favorite {
+    width: 46px;
+    height: 38px;
+    display: flex;
+    align-items: start;
+    align-items: flex-end;
+    position: relative;
+    margin-right: 20px;
+    .favorite {
+      &__baige {
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        border-radius: 23px;
+        background: rgb(118, 185, 38);
+        top: 0px;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        font-family: Proxima Nova;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+    }
+  }
+  &__basket {
+    width: 45px;
+    height: 40px;
+    display: flex;
+    align-items: start;
+    align-items: flex-end;
+    position: relative;
+    .basket {
+      &__baige {
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        border-radius: 23px;
+        background: rgb(118, 185, 38);
+        top: 0px;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        font-family: Proxima Nova;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+    }
+  }
+}

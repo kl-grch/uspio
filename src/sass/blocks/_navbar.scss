@@ -1,0 +1,52 @@
+.navbar {
+  height: 70px;
+  background: rgb(110, 183, 68);
+  padding: 24px 0;
+  // position: relative;
+  &__wrapper {
+    position: relative;
+  }
+  &__search {
+    position: absolute;
+    top: -24px;
+    left: calc(100% - 70px);
+    width: 435px;
+    height: 70px;
+    background: rgb(98, 165, 60);
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    img {
+      height: 24px;
+      width: 24px;
+      cursor: pointer;
+    }
+  }
+  &__links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 70px);
+    .links {
+      &__divider {
+        width: 1px;
+        height: 30px;
+        background: rgb(55, 69, 74);
+        opacity: 0.2;
+      }
+      &__link {
+        a {
+          color: rgb(255, 255, 255);
+          font-family: Proxima Nova;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0px;
+          text-align: center;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
